@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymnastique - Gym Fitness Elite</title>
+    <link rel="stylesheet" href="presentation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="header-footer.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Gym Fitness Elite</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html" class="active">Gymnastique</a></li>
+                <li><a href="celebrites.html">Athlètes</a></li>
+                <li><a href="competitions.html">Compétitions</a></li>
+                <li><a href="entrainement.html">Entraînement</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hero-slideshow">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="c:\Users\hp\Downloads\télécharger (8).jpg" alt="Gymnastique artistique">
+                <div class="slide-text">
+                    <h2>La Gymnastique Artistique</h2>
+                    <p>Force, grâce et précision</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="c:\Users\hp\Downloads\Гимнастика 🤸_♀️.jpg" alt="Gymnastique rythmique">
+                <div class="slide-text">
+                    <h2>La Gymnastique Rythmique</h2>
+                    <p>Élégance et coordination</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="c:\Users\hp\Downloads\Boost Your Workout_ The Health Benefits of Pro Bounder.jpg" alt="Trampoline">
+                <div class="slide-text">
+                    <h2>Le Trampoline</h2>
+                    <p>Puissance et acrobaties</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="c:\Users\hp\Downloads\télécharger (12).jpg" alt="Gymnastique acrobatique">
+                <div class="slide-text">
+                    <h2>La Gymnastique Acrobatique</h2>
+                    <p>Équipe et synchronisation</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="c:\Users\hp\Downloads\Parkourspot Nürnberg Dorfäckerstraße - X-Move Gmbh.jpg" alt="Parkour">
+                <div class="slide-text">
+                    <h2>Le Parkour</h2>
+                    <p>Agilité et dépassement</p>
+                </div>
+            </div>
+            
+            </div>
+            
+            
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        
+       
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    
+    <section class="introduction">
+        <div class="container">
+            <h1>La Gymnastique : Un Art du Mouvement</h1>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>La gymnastique est bien plus qu'un sport, c'est une discipline qui allie force physique, souplesse, coordination et élégance. Pratiquée depuis l'Antiquité, elle a évolué pour devenir l'un des sports les plus complets et spectaculaires au monde.</p>
+                    <p>Que ce soit au sol, aux agrès ou en musique, chaque forme de gymnastique offre un spectacle unique où les athlètes repoussent les limites du corps humain.</p>
+                </div>
+                <div class="intro-stats">
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Disciplines olympiques</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Pays participants</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1896</span>
+                        <span class="stat-label">Premiers Jeux Olympiques</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="disciplines">
+        <div class="container">
+            <h2>Les Différentes Formes de Gymnastique</h2>
+            
+            <div class="discipline-grid">
+                
+                <div class="discipline-card">
+                    <div class="discipline-img">
+                        <img src="c:\Users\hp\Downloads\télécharger (8).jpg" alt="Gymnastique artistique">
+                    </div>
+                    <div class="discipline-content">
+                        <h3>Gymnastique Artistique</h3>
+                        <p class="discipline-sub">Masculine & Féminine</p>
+                        <p>La plus médiatisée des disciplines. Les hommes concourent au sol, cheval d'arçons, anneaux, saut de cheval, barres parallèles et barre fixe. Les femmes évoluent au saut, barres asymétriques, poutre et sol.</p>
+                        <ul class="discipline-features">
+                            <li><i class="fas fa-bolt"></i> Puissance explosive</li>
+                            <li><i class="fas fa-hand-peace"></i> Équilibre parfait</li>
+                            <li><i class="fas fa-star"></i> Grâce artistique</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="discipline-card reverse">
+                    <div class="discipline-img">
+                        <img src="c:\Users\hp\Downloads\Гимнастика 🤸_♀️.jpg" alt="Gymnastique rythmique">
+                    </div>
+                    <div class="discipline-content">
+                        <h3>Gymnastique Rythmique</h3>
+                        <p class="discipline-sub">Féminine uniquement</p>
+                        <p>Allie la danse, le théâtre et la manipulation d'engins : corde, cerceau, ballon, massues et ruban. Une discipline où la souplesse et l'élégance sont reines, sur fond musical.</p>
+                        <ul class="discipline-features">
+                            <li><i class="fas fa-music"></i> Coordination musicale</li>
+                            <li><i class="fas fa-hand-sparkles"></i> Manipulation d'engins</li>
+                            <li><i class="fas fa-feather"></i> Légèreté et souplesse</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="discipline-card">
+                    <div class="discipline-img">
+                        <img src="c:\Users\hp\Downloads\Boost Your Workout_ The Health Benefits of Pro Bounder.jpg" alt="Trampoline">
+                    </div>
+                    <div class="discipline-content">
+                        <h3>Trampoline</h3>
+                        <p class="discipline-sub">Individuel & Synchronisé</p>
+                        <p>Des acrobaties spectaculaires à plusieurs mètres de hauteur. Les gymnastes enchaînent saltos et vrilles avec une maîtrise parfaite des réceptions. Discipline olympique depuis 2000.</p>
+                        <ul class="discipline-features">
+                            <li><i class="fas fa-rocket"></i> Hauteur impressionnante</li>
+                            <li><i class="fas fa-sync-alt"></i> Vrilles et saltos</li>
+                            <li><i class="fas fa-handshake"></i> Synchronisation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="discipline-card reverse">
+                    <div class="discipline-img">
+                        <img src="c:\Users\hp\Downloads\télécharger (12).jpg" alt="Gymnastique acrobatique">
+                    </div>
+                    <div class="discipline-content">
+                        <h3>Gymnastique Acrobatique</h3>
+                        <p class="discipline-sub">Duos, Trios, Quatuors</p>
+                        <p>Travail en équipe avec des portés, pyramides humaines et figures de main à main. Confiance et synchronisation sont essentielles pour réaliser ces prouesses collectives.</p>
+                        <ul class="discipline-features">
+                            <li><i class="fas fa-users"></i> Travail d'équipe</li>
+                            <li><i class="fas fa-hand-holding-heart"></i> Portés acrobatiques</li>
+                            <li><i class="fas fa-crown"></i> Pyramides humaines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="discipline-card">
+                    <div class="discipline-img">
+                        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Aérobic">
+                    </div>
+                    <div class="discipline-content">
+                        <h3>Gymnastique Aérobic</h3>
+                        <p class="discipline-sub">Individuel, Mixte, Trios</p>
+                        <p>Enchaînements dynamiques et chorégraphiés avec des mouvements de haute intensité. Force, souplesse et endurance cardiovasculaire sont mises à l'épreuve.</p>
+                        <ul class="discipline-features">
+                            <li><i class="fas fa-heartbeat"></i> Endurance</li>
+                            <li><i class="fas fa-choreographies"></i> Chorégraphies intenses</li>
+                            <li><i class="fas fa-dumbbell"></i> Force dynamique</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="discipline-card reverse">
+                    <div class="discipline-img">
+                        <img src="c:\Users\hp\Downloads\Parkourspot Nürnberg Dorfäckerstraße - X-Move Gmbh.jpg" alt="Parkour">
+                    </div>
+                    <div class="discipline-content">
+                        <h3>Parkour & Freerunning</h3>
+                        <p class="discipline-sub">Urbain et créatif</p>
+                        >L'art du déplacement : franchir des obstacles urbains avec agilité et créativité. Le freerunning ajoute une dimension acrobatique avec des figures stylisées.</p>
+                        <ul class="discipline-features">
+                            <li><i class="fas fa-city"></i> Environnement urbain</li>
+                            <li><i class="fas fa-running"></i> Fluidité de mouvement</li>
+                            <li><i class="fas fa-paint-brush"></i> Créativité</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="equipement">
+        <div class="container">
+            <h2>Le Matériel Utilisé</h2>
+            <div class="equipement-grid">
+                <div class="equipement-item">
+                    <i class="fas fa-circle"></i>
+                    <h4>Anneaux</h4>
+                </div>
+                <div class="equipement-item">
+                    <i class="fas fa-grip-lines"></i>
+                    <h4>Barres parallèles</h4>
+                </div>
+                <div class="equipement-item">
+                    <i class="fas fa-grip-vertical"></i>
+                    <h4>Barre fixe</h4>
+                </div>
+                <div class="equipement-item">
+                    <i class="fas fa-arrow-left"></i>
+                    <h4>Cheval d'arçons</h4>
+                </div>
+                <div class="equipement-item">
+                    <i class="fas fa-square"></i>
+                    <h4>Poutre</h4>
+                </div>
+                <div class="equipement-item">
+                    <i class="fas fa-circle-notch"></i>
+                    <h4>Cerceau</h4>
+                </div>
+                <div class="equipement-item">
+                    <i class="fas fa-gripfire"></i>
+                    <h4>Massues</h4>
+                </div>
+                <div class="equipement-item">
+                    <i class="fas fa-ribbon"></i>
+                    <h4>Ruban</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à commencer votre parcours ?</h2>
+            <p>Rejoignez nos clubs partenaires et découvrez la gymnastique près de chez vous</p>
+            <div class="cta-buttons">
+                <a href="entrainement.html" class="btn btn-primary">Trouver un club</a>
+                <a href="celebrites.html" class="btn btn-secondary">Voir les athlètes</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        
+        let slideIndex = 1;
+        let timer;
+        
+        showSlides(slideIndex);
+        startAutoSlide();
+
+        
+        function startAutoSlide() {
+            timer = setInterval(function() {
+                changeSlide(1);
+            }, 5000); 
+        }
+
+        
+        function changeSlide(n) {
+            clearInterval(timer);
+            showSlides(slideIndex += n);
+            startAutoSlide();
+        }
+
+        
+        function currentSlide(n) {
+            clearInterval(timer);
+            showSlides(slideIndex = n);
+            startAutoSlide();
+        }
+
+       
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <footer>
+        <div class="footer-content">
+        
+        <div class="footer-section">
+            <h3>Gym Fitness Elite</h3>
+            <p>Votre salle de sport premium depuis 2015. Rejoignez une communauté passionnée et atteignez vos objectifs fitness dans une ambiance conviviale.</p>
+            
+        </div>
+        <div class="footer-section">
+    <h3>Liens rapides</h3>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gymnastique.html">Gymnastique</a></li>
+        <li><a href="celebrites.html">Célébrités</a></li>
+        <li><a href="competitions.html">Compétitions</a></li>
+        <li><a href="entrainement.html">Entraînement</a></li>
+    </ul>
+</div>
+        <div class="footer-section">
+            <h3>Horaires</h3>
+            <ul class="hours">
+                <li>Lun-Ven <span>6h - 23h</span></li>
+                <li>Sam <span>8h - 21h</span></li>
+                <li>Dim <span>9h - 19h</span></li>
+            </ul>
+            <p style="margin-top: 1rem; color: #ffd700;">7j/7 - 365j/an</p>
+        </div>
+    <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Recevez nos offres exclusives</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'abonner</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Gym Fitness Elite. Tous droits réservés.</p>
+        <div class="legal-links">
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">CGV</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

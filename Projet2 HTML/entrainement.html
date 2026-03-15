@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entraînement - Gym Fitness Elite</title>
+    <link rel="stylesheet" href="entrainement.css">
+    <link rel="stylesheet" href="header-footer.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">GYM FITNESS ELITE</div>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="presentation.html">Gymnastique</a>
+            <a href="celebrites.html">Célébrités</a>
+            <a href="competitions.html">Compétitions</a>
+            <a href="entrainement.html" class="active">Entraînement</a>
+        </nav>
+        
+        <div class="panier-icon" onclick="afficherPanier()">
+            🛒 <span id="panier-compteur">0</span>
+        </div>
+    </header>
+
+    
+    <section class="page-header">
+        <h1>Entraînement</h1>
+        <p>Programmes, boutique, abonnements et conseils pour progresser</p>
+    </section>
+
+    
+    <section class="programmes-section">
+        <h2 class="section-title">💪 Programmes d'entraînement</h2>
+        <div class="programmes-container">
+            
+            
+            <div class="programme-card">
+                <div class="programme-header debutant">
+                    <h3>Programme Débutant</h3>
+                    <p>Pour ceux qui commencent</p>
+                </div>
+                <div class="programme-content">
+                    <ul class="programme-features">
+                        <li>✓ 3 séances par semaine</li>
+                        <li>✓ Apprentissage des bases</li>
+                        <li>✓ Suivi personnalisé</li>
+                    </ul>
+                    <div class="programme-footer">
+                        <span class="prix">20000 XOF <small>/mois</small></span>
+                        <button onclick="ajouterAuPanier('Programme Débutant', 20000)" class="btn-programme">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="programme-card">
+                <div class="programme-header intermediaire">
+                    <h3>Programme Intermédiaire</h3>
+                    <p>Pour confirmer son niveau</p>
+                </div>
+                <div class="programme-content">
+                    <ul class="programme-features">
+                        <li>✓ 4 séances par semaine</li>
+                        <li>✓ Figures intermédiaires</li>
+                        <li>✓ Coaching en ligne</li>
+                    </ul>
+                    <div class="programme-footer">
+                        <span class="prix">35000 XOF <small>/mois</small></span>
+                        <button onclick="ajouterAuPanier('Programme Intermédiaire', 35000)" class="btn-programme">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="programme-card">
+                <div class="programme-header expert">
+                    <h3>Programme Expert</h3>
+                    <p>Pour les compétiteurs</p>
+                </div>
+                <div class="programme-content">
+                    <ul class="programme-features">
+                        <li>✓ 6 séances par semaine</li>
+                        <li>✓ Préparation compétition</li>
+                        <li>✓ Coaching individuel</li>
+                    </ul>
+                    <div class="programme-footer">
+                        <span class="prix">50000 XOF <small>/mois</small></span>
+                        <button onclick="ajouterAuPanier('Programme Expert', 50000)" class="btn-programme">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="abonnement-section">
+        <h2 class="section-title">⭐ Abonnements</h2>
+        <div class="abonnement-container">
+            
+            
+            <div class="abonnement-card">
+                <h3>Abonnement Mensuel</h3>
+                <div class="abonnement-prix">
+                    <span class="prix">25000 XOF</span>
+                    <span class="periode">/mois</span>
+                </div>
+                <ul class="abonnement-features">
+                    <li>✅ Accès illimité</li>
+                    <li>✅ Cours collectifs</li>
+                    <li>✅ Annulation possible</li>
+                </ul>
+                <button onclick="ajouterAuPanier('Abonnement Mensuel', 25000)" class="btn-abonnement">Ajouter au panier</button>
+            </div>
+
+            
+            <div class="abonnement-card premium">
+                <div class="abonnement-badge">Populaire</div>
+                <h3>Abonnement Annuel</h3>
+                <div class="abonnement-prix">
+                    <span class="prix">250000 XOF</span>
+                    <span class="periode">/an</span>
+                </div>
+                <ul class="abonnement-features">
+                    <li>✅ 2 mois offerts</li>
+                    <li>✅ Accès prioritaire</li>
+                    <li>✅ Coaching inclus</li>
+                </ul>
+                <button onclick="ajouterAuPanier('Abonnement Annuel', 250000)" class="btn-abonnement">Ajouter au panier</button>
+            </div>
+
+            
+            <div class="abonnement-card">
+                <h3>Pass 10 séances</h3>
+                <div class="abonnement-prix">
+                    <span class="prix">80000 XOF</span>
+                    <span class="periode">/pass</span>
+                </div>
+                <ul class="abonnement-features">
+                    <li>✅ 10 séances</li>
+                    <li>✅ Valable 3 mois</li>
+                    <li>✅ Partageable</li>
+                </ul>
+                <button onclick="ajouterAuPanier('Pass 10 séances', 80000)" class="btn-abonnement">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="boutique-section">
+        <h2 class="section-title">🛍️ Boutique</h2>
+        <div class="boutique-container">
+            
+            
+            <div class="produit-card">
+                <div class="produit-image">
+                    <img src="c:\Users\hp\Downloads\Cimic 1_3_5 Pack Running Top Men Casual Crew Neck Shirts Workout Plain Quick Dry Gym Top Moisture Wicking Active Athletic Shirts Short Sleeve Sport Tops.jpg" alt="T-shirt">
+                    <span class="produit-badge">Nouveau</span>
+                </div>
+                <div class="produit-info">
+                    <h3>T-shirt Elite</h3>
+                    <p class="produit-prix">15000 XOF</p>
+                    <button onclick="ajouterAuPanier('T-shirt Elite', 15000)" class="btn-produit">Ajouter au panier</button>
+                </div>
+            </div>
+
+            
+            <div class="produit-card">
+                <div class="produit-image">
+                    <img src="c:\Users\hp\Downloads\legs.jpg" alt="Legging">
+                    
+                    
+                </div>
+                <div class="produit-info">
+                    <h3>Legging Pro</h3>
+                    <p class="produit-prix">18000 XOF</p>
+                    <button onclick="ajouterAuPanier('Legging Pro', 18000)" class="btn-produit">Ajouter au panier</button>
+                </div>
+            </div>
+
+            
+            <div class="produit-card">
+                <div class="produit-image">
+                    <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gourde">
+                </div>
+                <div class="produit-info">
+                    <h3>Gourde Isotherme</h3>
+                    <p class="produit-prix">10000 XOF</p>
+                    <button onclick="ajouterAuPanier('Gourde Isotherme', 10000)" class="btn-produit">Ajouter au panier</button>
+                </div>
+            </div>
+
+            
+            <div class="produit-card">
+                <div class="produit-image">
+                    <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tapis">
+                </div>
+                <div class="produit-info">
+                    <h3>Tapis de sol</h3>
+                    <p class="produit-prix">20000 XOF</p>
+                    <button onclick="ajouterAuPanier('Tapis de sol', 20000)" class="btn-produit">Ajouter au panier</button>
+                </div>
+            </div>
+
+            
+            <div class="produit-card">
+                <div class="produit-image">
+                    <img src="https://images.unsplash.com/photo-1598289431512-b97b0917affc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bandes">
+                </div>
+                <div class="produit-info">
+                    <h3>Set de bandes</h3>
+                    <p class="produit-prix">12000 XOF</p>
+                    <button onclick="ajouterAuPanier('Set de bandes', 12000)" class="btn-produit">Ajouter au panier</button>
+                </div>
+            </div>
+
+            
+            <div class="produit-card">
+                <div class="produit-image">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sac">
+                </div>
+                <div class="produit-info">
+                    <h3>Sac de sport</h3>
+                    <p class="produit-prix">25000 XOF</p>
+                    <button onclick="ajouterAuPanier('Sac de sport', 25000)" class="btn-produit">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="conseils-section">
+        <h2 class="section-title">🎓 Conseils d'experts</h2>
+        <div class="conseils-container">
+            
+            
+            <div class="conseil-card">
+                <div class="conseil-image">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Coach">
+                </div>
+                <div class="conseil-content">
+                    <span class="conseil-categorie">Nutrition</span>
+                    <h3>Que manger avant l'entraînement ?</h3>
+                    <p>Découvrez les aliments pour avoir de l'énergie.</p>
+                    <a href="conseil-nutrition.html" class="btn-conseil">Lire plus →</a>
+                </div>
+            </div>
+
+            
+            <div class="conseil-card">
+                <div class="conseil-image">
+                    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Coach">
+                </div>
+                <div class="conseil-content">
+                    <span class="conseil-categorie">Technique</span>
+                    <h3>Améliorer sa souplesse</h3>
+                    <p>5 exercices essentiels pour gagner en souplesse.</p>
+                    <a href="conseil-souplesse.html" class="btn-conseil">Lire plus →</a>
+                </div>
+            </div>
+
+            
+            <div class="conseil-card">
+                <div class="conseil-image">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Coach">
+                </div>
+                <div class="conseil-content">
+                    <span class="conseil-categorie">Récupération</span>
+                    <h3>L'importance des étirements</h3>
+                    <p>Optimise ta récupération après l'effort.</p>
+                    <a href="conseil-recuperation.html" class="btn-conseil">Lire plus →</a>
+                </div>
+            </div>
+
+            
+            <div class="conseil-card">
+                <div class="conseil-image">
+                    <img src="c:\Users\hp\Downloads\Exercise Is Medicine—Here’s How to Make It Work for You.jpg" alt="Coach">
+                    </div>
+                <div class="conseil-content">
+                    <span class="conseil-categorie">Mental</span>
+                    <h3>Préparation mentale</h3>
+                    <p>Techniques pour gérer le stress.</p>
+                    <a href="conseil-mental.html" class="btn-conseil">Lire plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="modalPanier" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Votre Panier</h2>
+                <span class="close" onclick="fermerPanier()">&times;</span>
+            </div>
+            <div id="panier-contenu" class="panier-contenu">
+                
+            </div>
+            <div class="modal-footer">
+                <button onclick="viderPanier()" class="btn-vider">Vider le panier</button>
+                <button onclick="payer()" class="btn-payer">Payer</button>
+            </div>
+        </div>
+    </div>
+
+   
+     <footer>
+        <div class="footer-content">
+        
+        <div class="footer-section">
+            <h3>Gym Fitness Elite</h3>
+            <p>Votre salle de sport premium depuis 2015. Rejoignez une communauté passionnée et atteignez vos objectifs fitness dans une ambiance conviviale.</p>
+            
+        </div>
+        <div class="footer-section">
+    <h3>Liens rapides</h3>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gymnastique.html">Gymnastique</a></li>
+        <li><a href="celebrites.html">Célébrités</a></li>
+        <li><a href="competitions.html">Compétitions</a></li>
+        <li><a href="entrainement.html">Entraînement</a></li>
+    </ul>
+</div>
+        <div class="footer-section">
+            <h3>Horaires</h3>
+            <ul class="hours">
+                <li>Lun-Ven <span>6h - 23h</span></li>
+                <li>Sam <span>8h - 21h</span></li>
+                <li>Dim <span>9h - 19h</span></li>
+            </ul>
+            <p style="margin-top: 1rem; color: #ffd700;">7j/7 - 365j/an</p>
+        </div>
+    <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Recevez nos offres exclusives</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'abonner</button>
+            </form>
+        </div>
+    </div>
+    <div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Gym Fitness Elite. Tous droits réservés.</p>
+        <div class="legal-links">
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">CGV</a>
+        </div>
+    </div>
+</footer>
+    
+    
+    <script src="panier.js"></script>
+</body>
+</html>
