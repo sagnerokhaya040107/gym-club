@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétitions - Gym Fitness Elite</title>
+    <link rel="stylesheet" href="competitions.css">
+    <link rel="stylesheet" href="header-footer.css">
+</head>
+<body>
+   
+    <header>
+        <div class="logo">GYM FITNESS ELITE</div>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="presentation.html">Gymnastique</a>
+            <a href="celebrites.html">Célébrités</a>
+            <a href="competitions.html" class="active">Compétitions</a>
+            <a href="entrainement.html">Entraînement</a>
+        </nav>
+    </header>
+       
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>LES PLUS BEAUX MOMENTS <span class="highlight">DE LA GYMNASTIQUE</span></h1>
+        <p>Découvrez les performances légendaires qui ont marqué l'histoire</p>
+    </div>
+</section>
+    
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">150+</span>
+                <span class="stat-label">Compétitions</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">60+</span>
+                <span class="stat-label">Pays participants</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">1200+</span>
+                <span class="stat-label">Athlètes</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">Médailles d'or</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters-section">
+        <div class="filters-container">
+            <button class="filter-btn active" onclick="filterCompetitions('all')">Toutes</button>
+            <button class="filter-btn" onclick="filterCompetitions('olympiques')">Jeux Olympiques</button>
+            <button class="filter-btn" onclick="filterCompetitions('mondiaux')">Championnats du Monde</button>
+            <button class="filter-btn" onclick="filterCompetitions('europe')">Championnats d'Europe</button>
+            <button class="filter-btn" onclick="filterCompetitions('france')">Compétitions France</button>
+        </div>
+    </section>
+      
+<section class="calendar-section">
+    <h2 class="section-title">📅 CALENDRIER OFFICIEL 2026</h2>
+    
+    <div class="calendar-list">
+       
+        <div class="calendar-event">
+            <div class="event-date">
+                <span class="event-day">26</span>
+                <span class="event-month">JUILLET</span>
+            </div>
+            <div class="event-details">
+                <h3>Jeux Olympiques - Paris 2026</h3>
+                <p class="event-location">📍 Accor Arena, Paris</p>
+                <p class="event-type">Gymnastique artistique et rythmique</p>
+            </div>
+            <div class="event-status">
+                <span class="status-badge">À venir</span>
+            </div>
+        </div>
+
+       
+        <div class="calendar-event">
+            <div class="event-date">
+                <span class="event-day">20</span>
+                <span class="event-month">AVRIL</span>
+            </div>
+            <div class="event-details">
+                <h3>Championnats d'Europe - Rimini 2026</h3>
+                <p class="event-location">📍 Rimini Stadium, Italie</p>
+                <p class="event-type">Gymnastique artistique</p>
+            </div>
+            <div class="event-status">
+                <span class="status-badge">À venir</span>
+            </div>
+        </div>
+
+        
+        <div class="calendar-event">
+            <div class="event-date">
+                <span class="event-day">30</span>
+                <span class="event-month">SEPTEMBRE</span>
+            </div>
+            <div class="event-details">
+                <h3>Championnats du Monde - Anvers 2026</h3>
+                <p class="event-location">📍 Sportpaleis, Belgique</p>
+                <p class="event-type">Toutes disciplines</p>
+            </div>
+            <div class="event-status">
+                <span class="status-badge">À venir</span>
+            </div>
+        </div>
+
+        
+        <div class="calendar-event">
+            <div class="event-date">
+                <span class="event-day">15</span>
+                <span class="event-month">MAI</span>
+            </div>
+            <div class="event-details">
+                <h3>France Élite 2026</h3>
+                <p class="event-location">📍 LDLC Arena, Lyon</p>
+                <p class="event-type">Championnats de France</p>
+            </div>
+            <div class="event-status">
+                <span class="status-badge">À venir</span>
+            </div>
+        </div>
+
+        
+        <div class="calendar-event">
+            <div class="event-date">
+                <span class="event-day">10</span>
+                <span class="event-month">MARS</span>
+            </div>
+            <div class="event-details">
+                <h3>Coupe du Monde - Bakou 2026</h3>
+                <p class="event-location">📍 National Arena, Azerbaïdjan</p>
+                <p class="event-type">Épreuves par appareil</p>
+            </div>
+            <div class="event-status">
+                <span class="status-badge">À venir</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <section class="past-competitions">
+        <h2 class="section-title">✨ COMPÉTITIONS PASSÉES</h2>
+
+        <div class="past-grid">
+           
+            <div class="past-card">
+                <div class="past-media">
+                <video src="c:\Users\hp\Downloads\ssstik.io_1773436953902.mp4" controls></video>
+                </div>
+                <div class="past-content">
+                    <h3>Tokyo 2020</h3>
+                    <p>Jeux Olympiques - Japon</p>
+                    <div class="past-results">
+                        <span>🏅 Simone Biles: 2 médailles</span>
+                        <span>🥇 Équipe USA: Or</span>
+                    </div>
+                    <button class="btn-replay" onclick="voirReplay('Tokyo 2020')">Voir le replay</button>
+                </div>
+            </div>
+
+           
+            <div class="past-card">
+                <div class="past-media">
+                   <video src="c:\Users\hp\Downloads\ssstik.io_@best_womangymnasts_1773438552919.mp4" controls></video>
+                </div>
+                <div class="past-content">
+                    <h3>Rio 2016</h3>
+                    <p>Jeux Olympiques - Brésil</p>
+                    <div class="past-results">
+                        <span>🏅 Simone Biles: 4 médailles d'or</span>
+                        <span>🥇 Équipe USA: Or</span>
+                    </div>
+                    <button class="btn-replay" onclick="voirReplay('Rio 2016')">Voir le replay</button>
+                </div>
+            </div>
+
+            
+            <div class="past-card">
+                <div class="past-media">
+                    <video src="c:\Users\hp\Downloads\ssstik.io_1773438847207.mp4" controls></video>
+                </div>
+                <div class="past-content">
+                    <h3>Anvers 2023</h3>
+                    <p>Championnats du Monde - Belgique</p>
+                    <div class="past-results">
+                        <span>🥉 Équipe de France: Bronze</span>
+                        <span>🏅 Mélanie DJDS: Finaliste</span>
+                    </div>
+                    <button class="btn-replay" onclick="voirReplay('Anvers 2023')">Voir le replay</button>
+                </div>
+            </div>
+
+           
+            <div class="past-card">
+                <div class="past-media">
+                    <video src="c:\Users\hp\Downloads\ssstik.io_1773439327763.mp4" controls></video>
+                </div>
+                <div class="past-content">
+                    <h3>Munich 2022</h3>
+                    <p>Championnats d'Europe - Allemagne</p>
+                    <div class="past-results">
+                        <span>🏅 Plusieurs médailles françaises</span>
+                        <span>🥇 Marine Boyer: Argent</span>
+                    </div>
+                    <button class="btn-replay" onclick="voirReplay('Munich 2022')">Voir le replay</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="videos-section">
+        <h2 class="section-title">🎥 VIDÉOS À LA UNE</h2>
+        <div class="videos-grid">
+          
+            <div class="video-card">
+                <div class="video-container">
+                    <video src="c:\Users\hp\Downloads\ssstik.io_1773472532428.mp4" controls></video>
+                </div>
+               <h3>Les 10 plus beaux moments</h3>
+                <p>Les performances qui ont marqué l'histoire</p>
+                </div>
+                
+            
+            <div class="video-card">
+                <div class="video-container">
+                    <video src="c:\Users\hp\Downloads\ssstik.io_1773439959866.mp4" controls></video>
+                </div>
+                <h3>Simone Biles - Légende</h3>
+                <p>Retour sur la carriére de la plus grande gymaste</p>
+            </div>
+                
+            <div class="video-card">
+                <div class="video-container">
+                    <video src="c:\Users\hp\Downloads\ssstik.io_1773438847207.mp4" controls></video>
+                </div>
+                <h3>Mélanie DJDS - France</h3>
+                <p>Les plus belles performances de la championne</p>
+            </div>
+
+           
+            <div class="video-card">
+                <div class="video-container">
+                  <video src="c:\Users\hp\Downloads\ssstik.io_1773472190802.mp4" controls></video>
+                </div>
+                <h3>Mondiaux Liverpool 2022</h3>
+                <p>Résumé de la compétition</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="calendar-section">
+        <h2 class="section-title">📅 CALENDRIER 2026</h2>
+        
+        <div class="calendar-grid">
+            <div class="calendar-item" onclick="ajouterCalendrier('Paris 2026', '2026-07-26')">
+                <div class="calendar-date">
+                    <span class="date-day">26</span>
+                    <span class="date-month">Juil</span>
+                </div>
+                <div class="calendar-details">
+                    <h4>Paris 2026 - Jeux Olympiques</h4>
+                    <p>Gymnastique artistique - Accor Arena</p>
+                </div>
+                <button class="btn-calendar">➕</button>
+            </div>
+
+            <div class="calendar-item" onclick="ajouterCalendrier('Euro Rimini', '2026-04-20')">
+                <div class="calendar-date">
+                    <span class="date-day">20</span>
+                    <span class="date-month">Avr</span>
+                </div>
+                <div class="calendar-details">
+                    <h4>Championnats d'Europe - Rimini 2026</h4>
+                    <p>Italie - Qualifications</p>
+                </div>
+                <button class="btn-calendar">➕</button>
+            </div>
+
+            <div class="calendar-item" onclick="ajouterCalendrier('Mondiaux Anvers', '2026-09-30')">
+                <div class="calendar-date">
+                    <span class="date-day">30</span>
+                    <span class="date-month">Sep</span>
+                </div>
+                <div class="calendar-details">
+                    <h4>Mondiaux Anvers 2026</h4>
+                    <p>Belgique - Finales</p>
+                </div>
+                <button class="btn-calendar">➕</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>📧 RESTEZ INFORMÉ</h2>
+            <p>Recevez les actualités des compétitions en avant-première</p>
+            <form onsubmit="inscrireNewsletter(event)">
+                <input type="email" id="newsletter-email" placeholder="Votre email" required>
+                <button type="submit">S'abonner</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <footer>
+    <div class="footer-content">
+        
+        <div class="footer-section">
+            <h3>Gym Fitness Elite</h3>
+            <p>Votre salle de sport premium depuis 2015. Rejoignez une communauté passionnée et atteignez vos objectifs fitness dans une ambiance conviviale.</p>
+            
+        </div>
+
+        <div class="footer-section">
+    <h3>Liens rapides</h3>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Gymnastique</a></li>
+        <li><a href="celebrites.html">athlètes</a></li>
+        <li><a href="competitions.html">Compétitions</a></li>
+        <li><a href="entrainement.html">Entraînement</a></li>
+    </ul>
+</div>
+       
+
+        
+        <div class="footer-section">
+            <h3>Horaires</h3>
+            <ul class="hours">
+                <li>Lun-Ven <span>6h - 23h</span></li>
+                <li>Sam <span>8h - 21h</span></li>
+                <li>Dim <span>9h - 19h</span></li>
+            </ul>
+            <p style="margin-top: 1rem; color: #ffd700;">7j/7 - 365j/an</p>
+        </div>
+
+        
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Recevez nos offres exclusives</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'abonner</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Gym Fitness Elite. Tous droits réservés.</p>
+        <div class="legal-links">
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">CGV</a>
+        </div>
+    </div>
+</footer>
+
+    
+   
+    <script>
+        
+        function filterCompetitions(category) {
+            const cards = document.querySelectorAll('.competition-card');
+            
+            
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    if (card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // RÉSERVER DES PLACES
+        function reserverPlaces(competition) {
+            const nom = prompt("👤 Votre nom complet :");
+            const email = prompt("📧 Votre email :");
+            const places = prompt("🎟️ Nombre de places :", "2");
+            
+            if (nom && email && places) {
+                const message = `Réservation pour ${competition} :
+                \n👤 Nom: ${nom}
+                \n📧 Email: ${email}
+                \n🎟️ Places: ${places}
+                \n💰 Total: ${places * 50}€`;
+                
+                alert("✅ Réservation envoyée ! Vous recevrez une confirmation par email.");
+                window.location.href = `mailto:competitions@gymelite.sn?subject=Réservation ${competition}&body=${encodeURIComponent(message)}`;
+            }
+        }
+
+        // VOIR REPLAY
+        function voirReplay(competition) {
+            alert(`🎥 Redirection vers le replay de ${competition}`);
+            // Ici tu peux mettre le lien YouTube direct
+            // window.open('https://youtube.com/...', '_blank');
+        }
+
+        // AJOUTER AU CALENDRIER
+        function ajouterCalendrier(event, date) {
+            alert(`✅ ${event} ajouté à votre calendrier 2026 !`);
+            // Ici tu peux générer un fichier .ics
+        }
+
+        // NEWSLETTER
+        function inscrireNewsletter(event) {
+            event.preventDefault();
+            const email = document.getElementById('newsletter-email').value;
+            if (email) {
+                alert(`✅ Merci pour votre inscription ! Vous recevrez les actualités 2026 à ${email}`);
+                document.getElementById('newsletter-email').value = '';
+            }
+        }
+
+        // ANIMATION AU SCROLL
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <script>
+        // Ajoutez ce script pour gérer le plein écran
+document.addEventListener('DOMContentLoaded', function() {
+    const fullscreenBtns = document.querySelectorAll('.fullscreen-btn');
+    
+    fullscreenBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const videoContainer = this.closest('.video-container');
+            const video = videoContainer.querySelector('.custom-video');
+            
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) { /* Safari */
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { /* IE11 */
+                video.msRequestFullscreen();
+            }
+        });
+    });
+});
+    </script>
+</body>
+</html>

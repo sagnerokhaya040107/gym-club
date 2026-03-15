@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Paiement - Gym Fitness Elite</title>
+    <link rel="stylesheet" href="paiement.css">
+    <link rel="stylesheet" href="header-footer.css">
+</head>
+<body>
+    <h1>Test du système de paiement</h1>
+    <p>Clique sur un bouton pour tester le paiement</p>
+    
+    <button class="btn-test" onclick="ouvrirPaiement('Programme Expert', 49)">Payer 49€</button>
+    <button class="btn-test" onclick="ouvrirPaiement('Abonnement Annuel', 390)">Payer 390€</button>
+    <button class="btn-test" onclick="ouvrirPaiement('T-shirt Elite', 29.99)">Payer 29.99€</button>
+
+    
+    <div id="modalPaiement" class="modal-paiement" style="display: none;">
+        <div class="modal-paiement-content">
+            <div class="modal-paiement-header">
+                <h2>Paiement sécurisé</h2>
+                <span class="modal-paiement-close" onclick="fermerPaiement()">&times;</span>
+            </div>
+
+            <div class="paiement-resume">
+                <h3>RÉCAPITULATIF</h3>
+                <div class="paiement-produit">
+                    <span class="paiement-produit-nom" id="produitNom">Programme Expert</span>
+                    <span class="paiement-produit-prix" id="produitPrix">49€</span>
+                </div>
+                <div class="paiement-total">
+                    <span class="paiement-total-label">Total à payer</span>
+                    <span class="paiement-total-montant" id="totalMontant">49€</span>
+                </div>
+            </div>
+
+            <div class="paiement-test-card">
+                <p>💳 Carte de test</p>
+                <div class="paiement-test-card-code">4242 4242 4242 4242</div>
+                <div class="test-card-details">
+                    <span>12/34</span>
+                    <span>123</span>
+                </div>
+            </div>
+
+            <div class="paiement-form">
+                <div class="paiement-form-group">
+                    <label class="paiement-form-label">Numéro de carte</label>
+                    <input type="text" id="carteNumero" class="paiement-form-input" value="4242 4242 4242 4242" placeholder="1234 5678 9012 3456">
+                </div>
+
+                <div class="paiement-form-row">
+                    <div class="paiement-form-group">
+                        <label class="paiement-form-label">Date d'expiration</label>
+                        <input type="text" id="carteDate" class="paiement-form-input" value="12/34" placeholder="MM/AA">
+                    </div>
+                    <div class="paiement-form-group">
+                        <label class="paiement-form-label">CVV</label>
+                        <input type="text" id="carteCvv" class="paiement-form-input" value="123" placeholder="123">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte-icons">
+                <span class="carte-icon visa">Visa</span>
+                <span class="carte-icon mastercard">Mastercard</span>
+                <span class="carte-icon amex">Amex</span>
+            </div>
+
+            <div id="paiementLoading" class="paiement-loading" style="display: none;">
+                <div class="paiement-loading-spinner"></div>
+                <div class="paiement-loading-text">Traitement du paiement...</div>
+            </div>
+
+            <div id="paiementError" class="paiement-error" style="display: none;">
+                <span class="paiement-error-icon">⚠️</span>
+                <span id="errorMessage">Erreur de paiement</span>
+            </div>
+
+            <div class="paiement-actions">
+                <button class="btn-paiement btn-paiement-confirmer" onclick="confirmerPaiement()">Payer maintenant</button>
+                <button class="btn-paiement btn-paiement-annuler" onclick="fermerPaiement()">Annuler</button>
+            </div>
+
+            <div class="paiement-securite">
+                <span class="paiement-securite-icon">🔒</span>
+                <span>Paiement 100% sécurisé</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="successMessage" class="success-message" style="display: none;">
+        <div class="success-icon">✅</div>
+        <h3 class="success-title">Paiement réussi !</h3>
+        <p class="success-text">Merci pour votre achat</p>
+        <button class="success-btn" onclick="fermerSuccess()">Fermer</button>
+    </div>
+
+    <script src="paiement.js"></script>
+</body>
+</html>
